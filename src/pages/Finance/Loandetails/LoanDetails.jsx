@@ -17,7 +17,7 @@ const LoanDetails = () => {
 
   const fetchLoans = async () => {
     try {
-      const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/loans");
+      const res = await fetch("https://e-business-backend-71ky.onrender.com/api/loans");
       const data = await res.json();
       setLoans(data);
     } catch (error) {
@@ -31,7 +31,7 @@ const LoanDetails = () => {
 
   const addLoan = async () => {
     try {
-      await fetch("http://https://e-business-backend-71ky.onrender.com//api/loans", {
+      await fetch("https://e-business-backend-71ky.onrender.com/api/loans", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -54,7 +54,7 @@ const LoanDetails = () => {
 
   const deleteLoan = async (id) => {
     try {
-      await fetch(`http://https://e-business-backend-71ky.onrender.com//api/loans/${id}`, {
+      await fetch(`https://e-business-backend-71ky.onrender.com/api/loans/${id}`, {
         method: "DELETE"
       });
 

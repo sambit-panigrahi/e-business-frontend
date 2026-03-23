@@ -20,7 +20,7 @@ const Sellersinfo = () => {
   }, []);
 
   const fetchSellers = async () => {
-    const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/sellers");
+    const res = await fetch("https://e-business-backend-71ky.onrender.com/api/sellers");
     const data = await res.json();
     setSellersData(data);
   };
@@ -31,14 +31,14 @@ const Sellersinfo = () => {
 
   const saveSeller = async () => {
     if (editingId) {
-      await fetch(`http://https://e-business-backend-71ky.onrender.com//api/sellers/${editingId}`, {
+      await fetch(`https://e-business-backend-71ky.onrender.com/api/sellers/${editingId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)
       });
       setEditingId(null);
     } else {
-      await fetch("http://https://e-business-backend-71ky.onrender.com//api/sellers", {
+      await fetch("https://e-business-backend-71ky.onrender.com/api/sellers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, due: 0 })
@@ -50,7 +50,7 @@ const Sellersinfo = () => {
   };
 
   const deleteSeller = async (id) => {
-    await fetch(`http://https://e-business-backend-71ky.onrender.com//api/sellers/${id}`, {
+    await fetch(`https://e-business-backend-71ky.onrender.com/api/sellers/${id}`, {
       method: "DELETE"
     });
     fetchSellers();

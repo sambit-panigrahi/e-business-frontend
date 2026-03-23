@@ -28,7 +28,7 @@ const Register = () => {
     }
 
     try {
-      const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/auth/register", {
+      const res = await fetch("https://e-business-backend-71ky.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

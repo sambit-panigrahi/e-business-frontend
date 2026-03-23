@@ -20,7 +20,7 @@ function Stockdetails() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/products");
+      const res = await fetch("https://e-business-backend-71ky.onrender.com/api/products");
       const data = await res.json();
 
       // 🔥 FIX: ensure stock is number
@@ -39,7 +39,7 @@ function Stockdetails() {
   };
 
   const deleteProduct = async (id) => {
-    await fetch(`http://https://e-business-backend-71ky.onrender.com//api/products/${id}`, {
+    await fetch(`https://e-business-backend-71ky.onrender.com/api/products/${id}`, {
       method: "DELETE"
     });
     fetchProducts();

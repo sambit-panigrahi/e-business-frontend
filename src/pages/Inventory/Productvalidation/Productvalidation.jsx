@@ -11,7 +11,7 @@ function Productvalidation() {
   }, []);
 
   const fetchProducts = async () => {
-    const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/products");
+    const res = await fetch("https://e-business-backend-71ky.onrender.com/api/products");
     const data = await res.json();
     setProducts(data);
   };
