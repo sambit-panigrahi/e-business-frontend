@@ -9,7 +9,7 @@ const Forgot = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch("http://localhost:5000/api/auth/forgot", {
+            const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/auth/forgot", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

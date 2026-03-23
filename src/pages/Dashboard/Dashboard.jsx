@@ -39,7 +39,7 @@ const Dashboard = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/dashboard")
+    fetch("http://https://e-business-backend-71ky.onrender.com//api/dashboard")
       .then((res) => res.json())
       .then((data) => setStats(data))
       .catch((err) => console.error(err));

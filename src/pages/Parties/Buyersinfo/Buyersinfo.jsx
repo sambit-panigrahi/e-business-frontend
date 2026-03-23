@@ -21,7 +21,7 @@ const Buyersinfo = () => {
   }, []);
 
   const fetchBuyers = async () => {
-    const res = await fetch("http://localhost:5000/api/customers");
+    const res = await fetch("http://https://e-business-backend-71ky.onrender.com//api/customers");
     const data = await res.json();
     setBuyersData(data);
   };
@@ -33,14 +33,14 @@ const Buyersinfo = () => {
   // ADD / UPDATE
   const saveCustomer = async () => {
     if (editingId) {
-      await fetch(`http://localhost:5000/api/customers/${editingId}`, {
+      await fetch(`http://https://e-business-backend-71ky.onrender.com//api/customers/${editingId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)
       });
       setEditingId(null);
     } else {
-      await fetch("http://localhost:5000/api/customers", {
+      await fetch("http://https://e-business-backend-71ky.onrender.com//api/customers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, balance: 0 })
@@ -53,7 +53,7 @@ const Buyersinfo = () => {
 
   // DELETE
   const deleteCustomer = async (id) => {
-    await fetch(`http://localhost:5000/api/customers/${id}`, {
+    await fetch(`http://https://e-business-backend-71ky.onrender.com//api/customers/${id}`, {
       method: "DELETE"
     });
     fetchBuyers();
