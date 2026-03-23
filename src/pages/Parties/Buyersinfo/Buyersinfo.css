@@ -1,0 +1,204 @@
+/* ===== Page Container ===== */
+.buyers-page {
+  padding: 30px;
+  background: #f5f6f8;
+  min-height: 100vh;
+}
+
+/* ===== Page Title ===== */
+.buyers-page h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.buyers-page h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #facc15;
+  display: block;
+  margin-top: 6px;
+  border-radius: 3px;
+}
+
+/* ===== Summary Cards ===== */
+.buyers-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.buyers-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.buyers-card:hover {
+  transform: translateY(-4px);
+}
+
+.buyers-card h4 {
+  font-size: 14px;
+  color: #000000;
+}
+
+.buyers-card h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #facc15;
+}
+
+/* ===== Graph Section ===== */
+.buyers-graph {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.buyers-graph h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== Table Section ===== */
+.buyers-table {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.buyers-table h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== Responsive Table ===== */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+}
+
+th {
+  background: #facc15;
+  color: #000;
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+/* ===== Status Badge ===== */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .buyers-page {
+    padding: 15px;
+  }
+
+  .buyers-page h1 {
+    font-size: 20px;
+  }
+
+  .buyers-card {
+    padding: 18px;
+  }
+
+  .buyers-graph,
+  .buyers-table {
+    padding: 18px;
+  }
+}
+
+.buyers-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.buyers-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.buyers-form button {
+  background: #facc15;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buyers-form button:hover {
+  background: #eab308;
+}
+.search-box {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.buyers-form button {
+  background: #facc15;
+}
+
+.buyers-form button:hover {
+  background: #eab308;
+}
+
+button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background: #4caf50;
+  color: white;
+}
+
+button:last-child {
+  background: #e53935;
+  color: white;
+}

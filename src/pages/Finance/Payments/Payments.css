@@ -1,0 +1,122 @@
+.payments-container {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 40px 20px;
+}
+
+.payments-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+.payment-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.payment-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.payment-form button {
+  background: #f9a825;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background: #f57f17;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+.payments-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 200px;
+  background: #fffdf5;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #ffe082;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.15);
+}
+
+.summary-card h4 {
+  font-size: 14px;
+  color: #555;
+}
+
+.summary-card p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: #f9a825;
+}
+
+.chart-box {
+  background: #fffdf5;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #ffe082;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.15);
+  margin-bottom: 35px;
+}
+
+.payments-table {
+  background: #fffdf5;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #ffe082;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.15);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #fff8e1;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: #fffdf5;
+}
+
+@media (max-width: 768px) {
+  .payments-summary {
+    flex-direction: column;
+  }
+}

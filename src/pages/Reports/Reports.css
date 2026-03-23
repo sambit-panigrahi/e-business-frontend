@@ -1,0 +1,99 @@
+.report-container {
+  padding: 30px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.report-header h2 {
+  font-size: 26px;
+  color: #333;
+}
+
+.date-filter {
+  padding: 8px 12px;
+  border: 1px solid #ffc107;
+  border-radius: 5px;
+  background-color: #fff8e1;
+  cursor: pointer;
+}
+
+.report-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.report-card {
+  flex: 1;
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 6px solid #ffc107;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.report-card h4 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.report-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.profit-card {
+  background-color: #fff3cd;
+}
+
+.chart-section {
+  background-color: #fffde7;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.chart-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.transaction-report h3 {
+  margin-bottom: 15px;
+}
+
+.transaction-report table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.transaction-report th {
+  background-color: #ffc107;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-report td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.success {
+  color: green;
+  font-weight: 500;
+}
+
+.pending {
+  color: orange;
+  font-weight: 500;
+}

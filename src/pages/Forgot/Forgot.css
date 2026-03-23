@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background Layout */
+.forgot-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    #f4f4f4 35%,
+    #f5b301 35%,
+    #f5b301 65%,
+    #f4f4f4 65%
+  );
+}
+
+/* Main Card */
+.forgot-container {
+  width: 900px;
+  height: 500px;
+  background: #ffffff;
+  display: flex;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* LEFT PANEL */
+.forgot-left {
+  width: 50%;
+  background: #f5b301;
+  color: #ffffff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.forgot-img {
+
+}
+
+
+/* RIGHT PANEL */
+.forgot-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-box {
+  width: 320px;
+}
+
+.forgot-box h3 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* INPUT GROUP */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #f5b301;
+  box-shadow: 0 0 0 2px rgba(245, 179, 1, 0.2);
+}
+
+/* BUTTON */
+.forgot-btn {
+  width: 100%;
+  padding: 10px;
+  background: #f5b301;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.forgot-btn:hover {
+  background: #e0a200;
+}
+
+/* BACK LINK */
+.back-text {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.back-link {
+  color: #f5b301;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= FORGOT RESPONSIVE ================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .forgot-container {
+    width: 85%;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .forgot-wrapper {
+    background: #f4f4f4;
+  }
+
+  .forgot-container {
+    box-shadow: none;
+    border-radius: 0;
+    width: 95%;
+  }
+
+  .forgot-left h2 {
+    font-size: 24px;
+  }
+
+  .forgot-box h3 {
+    font-size: 20px;
+  }
+}

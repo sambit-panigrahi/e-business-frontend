@@ -1,0 +1,64 @@
+.settings-container {
+  padding: 30px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.settings-title {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.settings-form {
+  max-width: 700px;
+}
+
+.settings-section {
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 6px solid #ffc107;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.settings-section h3 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.settings-section input,
+.settings-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.settings-section textarea {
+  resize: none;
+  height: 80px;
+}
+
+.settings-section input:focus,
+.settings-section textarea:focus {
+  border-color: #ffc107;
+  outline: none;
+}
+
+.save-btn {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #e0a800;
+}

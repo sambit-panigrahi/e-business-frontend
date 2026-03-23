@@ -1,0 +1,87 @@
+/* Main Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Round Logo */
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f5c518; /* Yellow Border */
+}
+
+/* Company Name */
+.company-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000; 
+  letter-spacing: 1px;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  gap: 35px;
+}
+
+/* Menu Links */
+.navbar-right a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-right a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f5c518;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #f5c518;
+}
+
+.navbar-right a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+}

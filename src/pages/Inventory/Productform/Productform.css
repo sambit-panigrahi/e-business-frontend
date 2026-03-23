@@ -1,0 +1,38 @@
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-form {
+  width: 100%;
+  max-width: 400px;
+  background: #fffdf5;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ffe082;
+}
+
+.product-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.product-form button {
+  width: 100%;
+  padding: 10px;
+  background: #fbc02d;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

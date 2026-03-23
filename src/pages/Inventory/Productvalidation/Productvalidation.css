@@ -1,0 +1,156 @@
+.validation-container {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 40px 20px;
+}
+
+.validation-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Card */
+.validation-table {
+  background: #fffdf5;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #ffe082;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.15);
+  overflow-x: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #fff8e1;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: #fffdf5;
+}
+
+/* Status Badges */
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.ok {
+  background: #fff3cd;
+  color: #b45309;
+}
+
+.status.low {
+  background: #ffe0b2;
+  color: #d84315;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .validation-title {
+    font-size: 22px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+.validation-container {
+  padding: 40px;
+}
+
+.validation-title {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.ok {
+  color: green;
+}
+
+.low {
+  color: red;
+}
+.validation-container {
+  min-height: 100vh;
+  background: #f5f6f8;
+  padding: 30px;
+}
+
+.validation-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* SEARCH */
+.search-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* TABLE CARD */
+table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* HEADER */
+th {
+  background: #fbc02d;
+  color: black;
+  padding: 12px;
+}
+
+/* BODY */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+/* STATUS */
+.ok {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.low {
+  color: #d32f2f;
+  font-weight: 600;
+}
